@@ -5,7 +5,8 @@
 * [Contents](#content)
 
 ## General Info
-This browser based web application to ...
+This browser based web application to help users find covid-friendy restaurants near their location. 
+Sam Yoo
 	
 ## Technologies
 Technologies used for this project:
@@ -21,6 +22,8 @@ Content of the project folder:
  Top level of project folder: 
 ├── .gitignore               # Git ignore file
 ├── index.html               # landing HTML file, this is what users see when you come to url
+├── profile.html             # profile HTML file, this is what
+users see when they click on settings/profile.
 └── README.md
 
 It has the following subfolders and files:
