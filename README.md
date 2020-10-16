@@ -5,7 +5,7 @@
 * [Contents](#content)
 
 ## General Info
-This browser based web application to ...
+This web application was designed to help users find Covid-friendly restaurants. My name is John Ryue and the file I edited was the "index.html".
 	
 ## Technologies
 Technologies used for this project:
