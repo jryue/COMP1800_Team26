@@ -5,7 +5,12 @@
 * [Contents](#content)
 
 ## General Info
+<<<<<<< HEAD
 This web application was designed to help users find Covid-friendly restaurants. My name is John Ryue and the file I edited was the "index.html".
+=======
+This browser based web application to help users find covid-friendy restaurants near their location. 
+Sam Yoo
+>>>>>>> afee10750fce83c9d17d0b169a2f493e238eba8b
 	
 ## Technologies
 Technologies used for this project:
@@ -21,6 +26,8 @@ Content of the project folder:
  Top level of project folder: 
 ├── .gitignore               # Git ignore file
 ├── index.html               # landing HTML file, this is what users see when you come to url
+├── profile.html             # profile HTML file, this is what
+users see when they click on settings/profile.
 └── README.md
 
 It has the following subfolders and files:
