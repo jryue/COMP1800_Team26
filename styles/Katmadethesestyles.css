@@ -1,21 +1,25 @@
-
-
-.navbar{
-  background-color:teal; 
+.navbar {
+  background-color: teal;
 }
 
-.navbar img{
+.navbar img {
   position: absolute;
-  right:5%;
-  height:3em;
-  width:3em;
-  top:0%;
+  right: 5%;
+  height: 3em;
+  width: 3em;
+  top: 0%;
 }
+
 .navbar a {
-  color:black;
+  color: black;
 }
-.navbar-brand:hover{
-  color:yellow;
+
+h4{
+  text-align: center;
+  padding:1em 
+}
+.navbar-brand:hover {
+  color: blue;
 }
 
 .footer {
@@ -26,33 +30,33 @@
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
-  
+
 }
 
-.home-icon{
-  margin:auto;
+.home-icon {
+  margin: auto;
   cursor: pointer;
 }
 
-.search-icon{
-  margin:auto;
+.search-icon {
+  margin: auto;
   cursor: pointer;
 }
 
-.heart-icon{
-  margin:auto;
+.heart-icon {
+  margin: auto;
   cursor: pointer;
 }
 
-.history-icon{
-  margin:auto;
+.history-icon {
+  margin: auto;
   cursor: pointer;
 }
 
-.hamburger-icon{
-  margin:auto;
+.hamburger-icon {
+  margin: auto;
   width: 2.5rem;
   height: 3rem;
   z-index: 200;
@@ -61,21 +65,33 @@
   justify-content: space-evenly;
   cursor: pointer;
 }
+
 .line {
   width: 100%;
   height: 0.2rem;
   background-color: black;
   box-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
-.centering{
-  display:flex;
+
+.centering {
+  display: flex;
   align-items: center;
   justify-content: center;
 }
-.searchbar{
-  width:60%;
-  height:3rem;
-  border-style: solid;
-  border-color:black;
-  border-width:2px;
+
+.searchbar {
+  width:80%;
+  height: 3rem;
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  margin: auto;
+}
+
+#myInput{
+  width:100%;
+}
+
+a{
+  color:black;
 }
