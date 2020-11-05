@@ -14,10 +14,11 @@
   color: black;
 }
 
-h4{
+h4 {
   text-align: center;
-  padding:1em 
+  padding: 1em
 }
+
 .navbar-brand:hover {
   color: blue;
 }
@@ -80,18 +81,18 @@ h4{
 }
 
 .searchbar {
-  width:80%;
+  width: 80%;
   height: 3rem;
-  display:grid;
+  display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
   margin: auto;
 }
 
-#myInput{
-  width:100%;
+#myInput {
+  width: 100%;
 }
 
-a{
-  color:black;
+a {
+  color: black;
 }
