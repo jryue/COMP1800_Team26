@@ -1,0 +1,9 @@
+.form {
+    margin: 0 auto;
+}
+
+.searchbar {
+    margin: 3rem auto 1rem auto;
+    display: flex;
+    position: relative;
+}
