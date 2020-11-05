@@ -25,12 +25,9 @@ Content of the project folder:
  Top level of project folder: 
 ├── .gitignore               # Git ignore file
 ├── index.html               # landing HTML file, this is what users see when you come to url
-<<<<<<< HEAD
 |-- main.html                # main search page of app 
-=======
 ├── profile.html             # profile HTML file, this is what
 users see when they click on settings/profile.
->>>>>>> 36726039c7df1477cd16e43ddce99d35bc297fd2
 └── README.md
 
 It has the following subfolders and files:
