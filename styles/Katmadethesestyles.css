@@ -107,3 +107,75 @@ h4 {
 a {
   color: black;
 }
+
+.container{
+  width:100%;
+  height:80%;
+  display:flex;
+  justify-content: center;
+}
+.cards {
+
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  top: 10%;
+  height: 80%;
+  width: 90%;
+  z-index: 50;
+  overflow: scroll;
+}
+
+.card {
+  width: 100%;
+  background-color:lightgrey;
+  border-radius: 1rem;
+  padding: 10px;
+  font-size: 1.4rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  max-height: 200px;
+
+}
+
+.name h1 {
+  font-size: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.card img {
+ 
+}
+
+.info{
+  grid-column-start: 2;
+}
+
+.ratings {
+  grid-column-start: 2;
+}
+
+
+/* larger screens-------------------------------------------------------*/
+@media screen and (min-width: 850px) {
+
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 47%;
+    top: 53%;
+  }
+}
+
+  /*largest screens------------------------------------------------------*/
+  @media screen and (min-width: 1280px) {
+    .cards {
+      width: 70%;
+      height: 47%;
+      top: 53%;
+    }
+  }
