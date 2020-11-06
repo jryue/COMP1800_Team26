@@ -120,10 +120,10 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
-  top: 10%;
-  height: 80%;
+  top: 25%;
+  height: 69%;
   width: 90%;
-  z-index: 50;
+  z-index: 0;
   overflow: scroll;
 }
 
@@ -166,16 +166,16 @@ a {
   .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 47%;
-    top: 53%;
+    height: 69%;
+    top: 25%;
   }
 }
 
   /*largest screens------------------------------------------------------*/
   @media screen and (min-width: 1280px) {
     .cards {
-      width: 70%;
-      height: 47%;
-      top: 53%;
+      width: 71%;
+      height: 72%;
+      top: 25%;
     }
   }
