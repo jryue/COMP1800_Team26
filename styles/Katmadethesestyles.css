@@ -10,6 +10,13 @@
   top: 0%;
 }
 
+.btnclass{
+  display: flex;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn {
   display: flex;
 }
