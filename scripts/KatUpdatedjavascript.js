@@ -57,6 +57,17 @@ function readQuote(){
   })
   
 }
+
+//edit existing restaurant profiles
+db.collection("Restaurants").doc("Restaurant07").set({
+  Name: "Starbucks" ,
+  Address: "15941 Fraser Highway, Surrey, BC" ,
+  Business_hours: "Mon-Sun: 6AM-9PM" ,
+  Masks_required: "yes" ,
+  Count: "15"
+});
+
+
 //for the map
 var map = new ol.Map({
   target: 'map',
