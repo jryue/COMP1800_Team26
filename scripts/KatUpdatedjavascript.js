@@ -51,7 +51,7 @@ function readQuote(){
   db.collection("Restaurants").doc("Restaurant01")
   .onSnapshot(function(snap){
     console.log(snap.data());  //prints the document fields of "01"
-    console.log(snap.data().name);
-    document.getElementById("abc").innerText = snap.data().name;
+    console.log(snap.data().Name);
+    document.getElementById("abc").innerText = snap.data().Name;
   })
 }
