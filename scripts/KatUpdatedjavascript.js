@@ -30,17 +30,21 @@ var textTypedAction = function(event) {
 //document.getElementById("history-icon").addEventListener("click",
 //function(event) { console.log("history icon was clicked on with event: " + event); }, false);
 
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+var db = firebase.firestore();
+
 //Add a new document to collection retaurant
 db.collection("Restaurants").doc("restaurant02").set({
-  name: "Daji" ,
-  address: "123 main Vancouver" ,
-  business_hours: "9-5 mon- fri",
-  masks_required: "yes" ,
-  count: "25" 
+  Name: "Dae-Ji" ,
+  Address: "123 main Vancouver" ,
+  Business_hours: "9-5 mon- fri",
+  Masks_required: "yes" ,
+  Count: "25" 
 })
 
 .then(function(){
-  console.log("document successfully written");
+  console.log("Restaurant successfully added to database!");
 })
 
 .catch(function(error){
