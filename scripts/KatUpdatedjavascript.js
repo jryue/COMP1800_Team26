@@ -23,20 +23,18 @@ var textTypedAction = function(event) {
 //function(event) { console.log("search icon was clicked on with event: " + event); }, false);
 
 // for clicking on the heart icon
-//document.getElementById("heart-icon").addEventListener("click",
-//function(event) { console.log("heart icon was clicked on with event: " + event); }, false);
-
+//document.getElementById("heart-icon").addEventListener("cl add . 
 // for clicking on the history icon
 //document.getElementById("history-icon").addEventListener("click",
 //function(event) { console.log("history icon was clicked on with event: " + event); }, false);
 
 //Add a new document to collection retaurant
-db.collection("Restaurants").doc("restaurant02").set({
-  Name: "Daji" ,
-  Address: "123 main Vancouver" ,
+db.collection("Restaurants").doc("Restaurant04").set({
+  Name: "daji" ,
+  Address: "123 main st Vancouver" ,
   Business_hours: "9-5 mon- fri",
   Masks_required: "yes" ,
-  Count: "25" 
+  Count: "45" 
 })
 
 .then(function(){
@@ -48,10 +46,15 @@ db.collection("Restaurants").doc("restaurant02").set({
 })
 
 function readQuote(){
-  db.collection("Restaurants").doc("Restaurant01")
+  db.collection("Restaurants").doc("Restaurant02")
   .onSnapshot(function(snap){
     console.log(snap.data());  //prints the document fields of "01"
     console.log(snap.data().Name);
     document.getElementById("abc").innerText = snap.data().Name;
   })
+  .then(function(){
+    console.log("info pulled");
+  })
+  
 }
+
