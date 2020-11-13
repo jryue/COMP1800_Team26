@@ -15,36 +15,19 @@
   <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!-- My CSS -->
   <link rel="stylesheet" href="styles/Katmadethesestyles.css" />
-  <link rel="stylesheet" href="styles/JohnSearchbar.css" />
+  <link rel="stylesheet" href="styles/restaurant_profile_JR.css" />
   <title>CovidBites</title>
 </head>
 
 <body>
 
-  <!------Create a card for Dae-Ji using Javascript------------------------------------------->
-
-  <div class="daeji" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-
-
-
-
-  <!--NAVBAR Image and text 
-    image and text are both clickable-->
+  <!-------NAVBAR Image and text image and text are both clickable----------->
   <nav class="navbar navbar">
     <a class="navbar-brand" href="#">
       <img src="/images/Screenshot_1.jpg" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
@@ -55,6 +38,22 @@
   <div id="firebaseui-auth-container"></div>
   <div id="loader"></div>
 
+  <!------Create a jumbotron for Restaurant's profile page using Javascript------------------------------------------->
+
+  <div class="jumbotron jumbotron-fluid" id="restaurant">
+    <div class="rest-container">
+      <div id="pic">
+        <img src="/images/DaeJi_4883_Burnaby_BC.png" alt="Dae-Ji restaurant">
+      </div>
+      <h1 class="display-4">Dae-Ji</h1>
+      <div id="info">
+        <div class="masks"></div>
+        <div class="hours"></div>
+        <div class="contact"></div>
+        <div class="person-counter"></div>
+      </div>
+    </div>
+  </div>
 
   <!--------Footer with icons ------------------------------------------------------------------------------->
 

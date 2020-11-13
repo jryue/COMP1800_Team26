@@ -1,21 +1,27 @@
-function getRestaurantInfoToCards() {
+function getRestaurantInfo() {
     db.collection("Restaurants")
+        .doc("Restaurant02")
         .get()
-        .then(function (snap) {
-            snap.forEach(function (doc) {
-                var m = doc.data().message;
-                console.log(m);
-                var d1 = $("#Restaurant02").append("<div class='daeji' style='width: 18rem'");
-                console.log(d1);
-                var i = d1.append("<img src='...' class='card-img-top' alt='...'>")
-                console.log(i);
-                var d2 = d1.append("<div class='card-body'>")
-                console.log(d2);
-                d2.append("<h5 class='card-title'>"+m+"</h5>");
-                d2.append("<p class='card-text'>Based in Vancouver, BC, Canada, Dae-ji restaurant</p>");
-                d2.append("<a href='#' class='btn btn-primary'> Link to something</a>");
+        .then(function(doc) {
+            console.log("The data for this restaurant is:", doc.data());
+            //parseDetails(doc);
             })
-        })
-}
 
-getRestaurantInfoToCards();
+        var count = 0;
+
+        doc.forEach(function(x) {
+            $("#restaurant").append('<div id="info"> <div class="masks">' + count
+            + '"</div><div class="hours">"' + count + '</div><div class="contact">'
+            + count + '</div><div class="person-counter">' + count + '</div>');
+        }
+        /* function parseDetails(doc) {
+            let maskreq = document.createElement('masks');
+            let hour = document.createElement('hour');
+            let contact = document.createElement('contact');
+            let person = document.createElement('counter');
+
+            mask.textContent(''); */
+        
+
+
+//getRestaurantInfo();
