@@ -1,5 +1,9 @@
+body{
+  background-color: #F2F0F9;
+}
+
 .navbar {
-  background-color: teal;
+  background-color: #EC800D;
 }
 
 .navbar img {
@@ -22,22 +26,24 @@
 }
 
 .navbar a {
-  color: black;
+  color: #631E57;
+  font-weight: bold;
 }
 
 h4 {
   text-align: center;
-  padding: 1em
+  padding: 1em;
 }
 
 .navbar-brand:hover {
-  color: blue;
+  color:#54DEC0;
 }
+
 
 .footer {
   position: fixed;
   height: 50px;
-  background-color: teal;
+  background-color: #EC800D;
   bottom: 0px;
   left: 0px;
   right: 0px;
@@ -50,21 +56,25 @@ h4 {
 .home-icon {
   margin: auto;
   cursor: pointer;
+  color: #631E57;
 }
 
 .search-icon {
   margin: auto;
   cursor: pointer;
+  color: #631E57;;
 }
 
 .heart-icon {
   margin: auto;
   cursor: pointer;
+  color: #631E57;;
 }
 
 .history-icon {
   margin: auto;
   cursor: pointer;
+  color: #631E57;;
 }
 
 .hamburger-icon {
@@ -81,7 +91,7 @@ h4 {
 .line {
   width: 100%;
   height: 0.2rem;
-  background-color: black;
+  background-color: #631E57;;
   box-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
@@ -105,7 +115,7 @@ h4 {
 }
 
 a {
-  color: black;
+  color: #631E57;
 }
 
 .container{
