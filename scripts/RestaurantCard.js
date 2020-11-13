@@ -1,4 +1,4 @@
-function getRestaurantInfo() {
+function getRestaurantCard() {
     db.collection("Restaurants")
         .get()
         .then(function(snap) {
@@ -20,9 +20,9 @@ function getRestaurantInfo() {
         })
     })
 }
-getRestaurantInfo();
+getRestaurantCard();
 
-function getSpecificRestaurantInfo() {
+function getSpecificRestaurantCard() {
     db.collection("Restaurants")
         .where("Name", "==", "Boom Beer")
         .get()
@@ -45,4 +45,4 @@ function getSpecificRestaurantInfo() {
         })
     })
 }
-getSpecificRestaurantInfo();
+getSpecificRestaurantCard();
