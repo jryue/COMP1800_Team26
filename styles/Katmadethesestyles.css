@@ -156,10 +156,6 @@ a {
   margin-bottom: 0;
 }
 
-.card img {
- 
-}
-
 .info{
   grid-column-start: 2;
 }
@@ -174,8 +170,8 @@ a {
   justify-content: center;
 }
       .map {
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
         background-color:black;
       }
 

@@ -2,14 +2,36 @@
     margin: 0 auto;
 }
 
-.searchbar {
+form.searchbar div:first-child {
     margin: 3rem auto 1rem auto;
     display: flex;
     position: relative;
+    order: 1;
 }
 
-.dropdown {
+form.searchbar div:nth-child(2) {
+    margin: 3rem auto 1rem auto;
+    display: flex;
+    position: relative;
+    order: 2;
+}
+
+.dropdown1 {
     display: flex;
     justify-content: center;
     margin: 2rem;
+    order: 3;
+}
+
+.dropdown2 {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    order: 4;
+}
+
+#home-submit {
+    display: flex;
+    order: 5;
+    justify-content: center;
 }
