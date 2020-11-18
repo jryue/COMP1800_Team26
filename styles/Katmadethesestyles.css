@@ -169,11 +169,12 @@ a {
   display:flex;
   justify-content: center;
 }
-      .map {
-        height: 300px;
-        width: 300px;
-        background-color:black;
-      }
+.map {
+  height: 250px;
+  width: 300px;
+  background-color:black;
+  padding: 0 0 0.5rem 0;
+}
 
 
 /* larger screens-------------------------------------------------------*/
@@ -187,7 +188,6 @@ a {
     top: 25%;
   }
 }
-
 
 
   /*largest screens------------------------------------------------------*/

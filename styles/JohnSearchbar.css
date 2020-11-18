@@ -2,18 +2,21 @@
     margin: 0 auto;
 }
 
-form.searchbar div:first-child {
-    margin: 3rem auto 1rem auto;
+
+form div:first-child {
+    margin: 1rem auto 1rem auto;
     display: flex;
     position: relative;
     order: 1;
+    padding: 0.25rem 0;
 }
 
-form.searchbar div:nth-child(2) {
-    margin: 3rem auto 1rem auto;
+form div:nth-child(2) {
+    margin: 1rem auto 1rem auto;
     display: flex;
     position: relative;
     order: 2;
+    padding: 0.25rem 0;
 }
 
 .dropdown1 {
