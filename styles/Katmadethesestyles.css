@@ -39,6 +39,13 @@ h4 {
   color:#54DEC0;
 }
 
+.logolarge{
+  margin-top:10%;
+  display:flex;
+  align-content: center;
+  justify-content: center;
+
+}
 
 .footer {
   position: fixed;
