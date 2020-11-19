@@ -59,19 +59,6 @@ db.collection("Restaurants").doc("Restaurant07").set({
 });
 
 
-/* //for the map
-var map = new ol.Map({
-  target: 'map',
-  layers: [
-    new ol.layer.Tile({
-      source: new ol.source.OSM()
-    })
-  ],
-  view: new ol.View({
-    center: ol.proj.fromLonLat([-123.11, 49.25]),
-    zoom: 4
-  })
-}); */
 
 function getUser() {
   firebase.auth().onAuthStateChanged(function (user) {
@@ -96,3 +83,21 @@ function getUser() {
   })
 }
 getUser();
+
+//---------------------------------------------------------------
+// This function will check if the user is signed in.
+// If yes, then 
+//     1) the "login" text will change to "logout"
+//     2) and, the href will go to "index.html" where any logged in 
+//        users will be logged out.
+//----------------------------------------------------------------
+function disableLoginLink() {
+  firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+          //console.log("change it to logout");
+          document.getElementById("loginbtn").href = "login.html";
+          document.getElementById("loginbtn").innerHTML = "Logout";
+      }
+  })
+}
+disableLoginLink();
