@@ -29,7 +29,7 @@ var textTypedAction = function(event) {
 //function(event) { console.log("history icon was clicked on with event: " + event); }, false);
 
 //Add a new document to collection retaurant
-db.collection("Restaurants").doc("Restaurant04").set({
+/* db.collection("Restaurants").doc("Restaurant04").set({
   Name: "daji" ,
   Address: "123 main st Vancouver" ,
   Business_hours: "9-5 mon- fri",
@@ -43,20 +43,11 @@ db.collection("Restaurants").doc("Restaurant04").set({
 
 .catch(function(error){
   console.error("error writing document: ", error);
-})
+}) */
 
-function readQuote(){
-  db.collection("Restaurants").doc("Restaurant02")
-  .onSnapshot(function(snap){
-    console.log(snap.data());  //prints the document fields of "01"
-    console.log(snap.data().Name);
-    document.getElementById("abc").innerText = snap.data().Name;
-  })
-  .then(function(){
-    console.log("info pulled");
-  })
+
   
-}
+
 
 //edit existing restaurant profiles
 db.collection("Restaurants").doc("Restaurant07").set({
@@ -68,7 +59,7 @@ db.collection("Restaurants").doc("Restaurant07").set({
 });
 
 
-//for the map
+/* //for the map
 var map = new ol.Map({
   target: 'map',
   layers: [
@@ -80,4 +71,28 @@ var map = new ol.Map({
     center: ol.proj.fromLonLat([-123.11, 49.25]),
     zoom: 4
   })
-});
+}); */
+
+function getUser() {
+  firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+          console.log("user is signed in");
+          db.collection("user")
+              .doc(user.uid)
+              .get()
+              .then(function (doc) {
+                  var n = doc.data().name;
+                  var e = doc.data().email;
+                  //console.log(n);
+                  $("#user").text(n);
+                  $("#username").text(n);
+                  $("#email").text(e);
+
+                  
+              })
+      } else {
+          console.log("no user is signed in");
+      }
+  })
+}
+getUser();
