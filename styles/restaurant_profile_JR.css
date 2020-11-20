@@ -5,6 +5,10 @@ body {
 .navbar {
     background-color: #EC800D;
 }
+a{
+    color:#631E57;
+    text-decoration: none;
+}
 
 .navbar a {
     color: #631E57;
@@ -41,7 +45,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     text-align: center;
 }
 
