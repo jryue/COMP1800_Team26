@@ -50,9 +50,12 @@ var textTypedAction = function(event) {
 
 
 //edit existing restaurant profiles
-db.collection("image").doc("pic6").set({
-  Rest_name: "Starbucks" ,
-  img_url: "/images/starbucks.jpg"
+db.collection("Restaurants").doc("Restaurant09").set({
+  Address: "12345 130 Ave, Coquitlam, BC" ,
+  Business_hours: "Mon - Sat: 8AM - 10PM" ,
+  Count: "23" ,
+  Masks_required: "Yes",
+  Name: "In N Out"
 });
 
 
