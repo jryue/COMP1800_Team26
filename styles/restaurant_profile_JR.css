@@ -24,16 +24,17 @@ body {
     top: 0%;
 }
 
-.cards {
-
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* top: 25%;
-    height: 69%;
-    width: 90%; */
-    z-index: 0;
-    overflow: scroll;
+    position: relative;
+}
+.card-title {
+    font-size: 5rem;
+}
+.heart-icon {
+    width: 20%;
 }
 
 #card-container {
@@ -45,13 +46,9 @@ body {
 }
 
 #img-container {
-    border-radius: 50%;
-    width: 20%;
-    object-fit: contain;
-    justify-self: center;
-    align-self: center;
+    display: block;
+    margin: 0 auto;
 }
-
 
 .footer {
     position: fixed;

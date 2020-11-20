@@ -18,7 +18,7 @@ function createGrid(Restaurants) {
                 message = message +
                     "<div class='col' id=" + cid + ">" +
                     "</div>"
-                //if the remainder is not zero, start a new row
+                
                 if (!(i % 3)) {
                     console.log("end the row")
                     console.log("create new row");
@@ -59,9 +59,9 @@ function fillCards(Restaurants) {
                 i = i + 1;
                 var card = "#c" + i;
                 console.log(card);
+                
                 var d1 = $(card).append(
-                    "<div class='card' style='width: 28rem;'>" +
-                    "<img class='card-img-top' src='images/blah.jpg' alt='Card image cap'>" +
+                    "<div class='card'>" +
                     "<div class='card-body'>" +
                     "<h5 class='card-title'>" + name + "</h5>" +
                     "<p class='card-text'> " + address + "</p>" +

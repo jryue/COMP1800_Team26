@@ -1,4 +1,4 @@
-function getSpecificRestaurantCard() {
+function getRestaurantProfile() {
     db.collection("Restaurants")
         .where("Name", "==", "Boom Beer")
         .get()
@@ -11,16 +11,15 @@ function getSpecificRestaurantCard() {
                 var count = doc.data().Count;
                 var masks = doc.data().Masks_required;
                 //d1 is the div container with class = "card"
-                var d1 = $('#card-container').append('<div class="card" style="width: 15rem;">');
+                var d1 = $('#card-container').append('<div class="card" id="inside-card" style="width: 25rem;">');
                 var imgdiv = $('.card').append('<div id="img-container">');
-                var i = imgdiv.append('<img class="card-img-top" src="/images/orange.png" alt="Card image cap">');
-                var button = $('#img-container').append('<button type="button" class="btn btn-default btn-lg">');
-                var ht_icon = button.append('<span class="glyphicon glyphicon-star" aria-hidden="true">favorite</span>');
+                var i = $('#img-container').append('<img class="card-img-top" src="/images/boombeer.jpg" alt="Card image cap">');
+                var heart = $('#img-container').append('<img class="heart-icon" src="/images/heart.png" alt="favorite">');
                 var d2 = d1.append('<div class="card-body">');
                 d2.append('<h5 class="card-title">' + name + '</h5>');
-                d2.append('<p class="card-text">' + address + '</p>');
-                d2.append('<p class="card-text">' + hours + '</p>');
-                d2.append('<p class="card-text">' + count + '</p>');
+                d2.append('<p class="card-text"> Address: ' + address + '</p>');
+                d2.append('<p class="card-text"> Hours of Operation: ' + hours + '</p>');
+                d2.append('<p class="card-text"> People currently inside the restaurant: ' + count + '</p>');
                 d2.append('<p class="card-text"> Masks required: ' + masks + '</p>');
                 
                 var ratings = d1.append("<div class='ratings'>");
@@ -40,4 +39,4 @@ function getSpecificRestaurantCard() {
         })
     })
 }
-getSpecificRestaurantCard();
+getRestaurantProfile();
