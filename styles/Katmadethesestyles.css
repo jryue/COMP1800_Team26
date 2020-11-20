@@ -21,8 +21,26 @@ body{
   align-items: center;
 }
 
+#sort{
+  display:flex;
+  justify-content: center;
+}
+.cardsholder{
+  display:flex;
+  justify-content: center;
+}
 .btn {
   display: flex;
+}
+.col{
+  max-height: 33%;
+}
+.row{
+  max-width: 35%;
+}
+.card{
+  max-width:100%;
+  max-height:100%;
 }
 
 .navbar a {
