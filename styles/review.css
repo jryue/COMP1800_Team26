@@ -1,37 +1,77 @@
-.content {
+.modal-content {
+    background-color: orange;
+    color: white;
+}
+
+.rating-widget {
     display: flex;
-    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
-.rev-section {
-    margin: auto;
-    padding: 0 1rem;
-    max-width: 1100px;
-    text-align: center;
+.rating-widget .post {
+    display: none;
 }
 
-.reviews {
-    margin: 2rem auto;
-    display: flex;
-    flex-wrap: wrap;
+.rating-widget .star-rating input {
+    display: none;
 }
 
-.review {
-    margin: 0 1rem;
-    min-width: 300px;
-    flex: 1;
+.star-rating label {
+    font-size: 4em;
+    color: white;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
 }
 
-.head-review img {
-    border-radius: 50%;
+input:not(:checked)~label:hover,
+input:not(:checked)~label:hover~label {
+    color: yellow
 }
 
-.btn {
-    color: black;
+input:checked~label {
+    color: yellow
+}
+
+input:checked~form {
+    display: block;
+}
+
+input#rate-5:checked~label {
+    color: yellow;
+    text-shadow: 0 0 20px #952;
+}
+
+form .textarea {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(255, 189, 114);
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 1.2em;
+    resize: none;
+}
+
+#button {
+    outline: none;
+    border: 1px solid rgb(255, 162, 99);
+    background: rgb(255, 255, 255);
+    color: #999;
     font-size: 1em;
     font-weight: bold;
+    text-transform: uppercase;
+    justify-content: center;
 }
 
-.rating {
-    color: rgb(223, 223, 35);
+.reviewBtn {
+    display: flex;
+    justify-content: center;
 }
