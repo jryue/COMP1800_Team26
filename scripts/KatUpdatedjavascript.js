@@ -50,12 +50,9 @@ var textTypedAction = function(event) {
 
 
 //edit existing restaurant profiles
-db.collection("Restaurants").doc("Restaurant07").set({
-  Name: "Starbucks" ,
-  Address: "15941 Fraser Highway, Surrey, BC" ,
-  Business_hours: "Mon-Sun: 6AM-9PM" ,
-  Masks_required: "yes" ,
-  Count: "15"
+db.collection("image").doc("pic6").set({
+  Rest_name: "Starbucks" ,
+  img_url: "/images/starbucks.jpg"
 });
 
 
