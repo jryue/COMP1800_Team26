@@ -57,6 +57,7 @@ function fillCards(Restaurants) {
                 var count = doc.data().Count;
                 var masks = doc.data().Masks_required;
                 var name_no_space = name.replace(/\s+/g, '');
+                //get name of image file from firebase
                 var image = doc.data().Image;
                 name_no_space = name_no_space.concat('_profile.html');
                 i = i + 1;
