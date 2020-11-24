@@ -37,9 +37,6 @@ a{
 .card-title {
     font-size: 5rem;
 }
-.heart-icon {
-    width: 20%;
-}
 
 #card-container {
     display: flex;
@@ -50,7 +47,6 @@ a{
 }
 
 #img-container {
-    display: block;
     margin: 0 auto;
 }
 
@@ -114,6 +110,6 @@ a{
 }
 
 .heart {
-    font-size: 25px;
-    color:rgb(238, 131, 131);
+    font-size: 4rem;
+    color:rgb(240, 9, 9);
 }

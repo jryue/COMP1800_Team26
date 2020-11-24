@@ -46,7 +46,12 @@ var textTypedAction = function(event) {
 }) */
 
 
-  
+//Edit the existing "user" collection
+db.collection("user").doc("/user/1MmYhLiKj6cW3wGK4SdEhKmjJOU2").set({
+  email: "" ,
+  name: "" ,
+  faves: 
+})  
 
 
 //edit existing restaurant profiles

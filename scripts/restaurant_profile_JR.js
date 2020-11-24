@@ -1,6 +1,6 @@
 function getRestaurantProfile() {
     db.collection("Restaurants")
-        .where("Name", "==", "Popeyes")
+        .where("Name", "==", "Mcdonalds")
         .get()
         .then(function(snap) {
             snap.forEach(function(doc) {
