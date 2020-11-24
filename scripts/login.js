@@ -26,12 +26,12 @@ var uiConfig = {
     },
 
     signInFlow: 'popup',
-    signInSuccessUrl: 'home.html',
+    signInSuccessUrl: 'home_page.html',
     signInOptions: [
         firebase.auth.EmailAuthProvider.PROVIDER_ID,
     ],
-    tosUrl: 'home.html',
-    privacyPolicyUrl: 'home.html',
+    tosUrl: 'home_page.html',
+    privacyPolicyUrl: 'home_page.html',
     accountChooserEnabled: false
 };
 ui.start('#firebaseui-auth-container', uiConfig);
