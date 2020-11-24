@@ -1,6 +1,6 @@
 function getRestaurantProfile() {
     db.collection("Restaurants")
-        .where("Name", "==", "Dae-Ji")
+        .where("Name", "==", "Popeyes")
         .get()
         .then(function(snap) {
             snap.forEach(function(doc) {
@@ -13,7 +13,7 @@ function getRestaurantProfile() {
                 //d1 is the div container with class = "card"
                 var d1 = $('#card-container').append('<div class="card" id="inside-card" style="width: 25rem;">');
                 var imgdiv = $('.card').append('<div id="img-container">');
-                var i = $('#img-container').append('<img class="card-img-top" src="/images/DaeJi_4883_Burnaby_BC.png" alt="Card image cap">');
+                var i = $('#img-container').append('<img class="card-img-top" src="" alt="Card image cap">');
                 var heart = $('#img-container').append('<img class="heart-icon" src="/images/heart.png" alt="favorite">');
                 var d2 = d1.append('<div class="card-body">');
                 d2.append('<h5 class="card-title">' + name + '</h5>');

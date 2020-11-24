@@ -57,6 +57,7 @@ function fillCards(Restaurants) {
                 var count = doc.data().Count;
                 var masks = doc.data().Masks_required;
                 var name_no_space = name.replace(/\s+/g, '');
+                var image = doc.data().Image;
                 name_no_space = name_no_space.concat('_profile.html');
                 i = i + 1;
                 var card = "#c" + i;
@@ -65,6 +66,7 @@ function fillCards(Restaurants) {
                 var d1 = $(card).append(
                     "<div class='card'>" +
                     "<div class='card-body'>" +
+                    "<img class='card-img-top' src='./images/'" + image + "' alt='Card image cap'>" +
                     "<h5 class='card-title'>" + name + "</h5>" +
                     "<p class='card-text'> " + address + "</p>" +
                     "<p class='card-text'> Masks Required: " + masks + "</p>" +
