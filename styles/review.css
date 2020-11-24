@@ -1,77 +1,72 @@
-.modal-content {
-    background-color: orange;
-    color: white;
-}
-
-.rating-widget {
+content {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.rating-widget .post {
-    display: none;
+.rev-section {
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 1100px;
+    text-align: center;
 }
 
-.rating-widget .star-rating input {
-    display: none;
-}
-
-.star-rating label {
-    font-size: 4em;
-    color: white;
-    padding: 10px;
-    float: right;
-    transition: all 0.2s ease;
-}
-
-input:not(:checked)~label:hover,
-input:not(:checked)~label:hover~label {
-    color: yellow
-}
-
-input:checked~label {
-    color: yellow
-}
-
-input:checked~form {
-    display: block;
-}
-
-input#rate-5:checked~label {
-    color: yellow;
-    text-shadow: 0 0 20px #952;
-}
-
-form .textarea {
-    height: 100px;
-    width: 100%;
-    overflow: hidden;
-}
-
-form .textarea textarea {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: 1px solid rgb(255, 189, 114);
-    background: rgb(255, 255, 255);
-    padding: 10px;
-    font-size: 1.2em;
-    resize: none;
-}
-
-#button {
-    outline: none;
-    border: 1px solid rgb(255, 162, 99);
-    background: rgb(255, 255, 255);
-    color: #999;
-    font-size: 1em;
-    font-weight: bold;
+.title {
+    font-size: 2.5rem;
     text-transform: uppercase;
-    justify-content: center;
+    color: darkslategray;
+    margin-bottom: .5rem;
 }
 
-.reviewBtn {
+.subtitle {
+    font-size: 1.1rem;
+    color: gray;
+    font-style: italic;
+}
+
+.reviews {
+    margin: 2rem auto;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.review {
+    margin: 0 1rem;
+    flex: 1;
+    min-width: 300px;
+}
+
+.head-review {
+    margin: 1.75rem auto;
+
+}
+
+img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.body-review {
+    background-color: rgb(238, 238, 238);
+    padding: 2.5rem;
+    box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+}
+
+.name-review {
+    font-size: 1.5rem;
+    color: rgb(50, 50, 50);
+    margin-bottom: .25rem;
+}
+
+.place-review {
+    font-style: italic;
+}
+
+.rating {
+    color: yellow;
+    margin: 1rem 0;
+}
+
+.desc-rivew {
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: rgb(150, 150, 150);
 }
