@@ -46,16 +46,22 @@ var textTypedAction = function(event) {
 }) */
 
 
-  
+//Edit the existing "user" collection
+db.collection("user").doc("/user/1MmYhLiKj6cW3wGK4SdEhKmjJOU2").set({
+  email: "" ,
+  name: "" ,
+  faves: 
+})  
 
 
 //edit existing restaurant profiles
 db.collection("Restaurants").doc("Restaurant09").set({
-  Address: "12345 130 Ave, Coquitlam, BC" ,
+  Address: "12345 123 St, Burnaby, BC" ,
   Business_hours: "Mon - Sat: 8AM - 10PM" ,
-  Count: "23" ,
+  Count: "33" ,
   Masks_required: "Yes",
-  Name: "In N Out"
+  Name: "In N Out" ,
+  Image: "innout.jpg"
 });
 
 
