@@ -1,4 +1,4 @@
-function getRestaurantProfile() {
+function getReview() {
     db.collection("Restaurants")
         .where("Name", "==", "Dae-Ji")
         .get()
@@ -14,7 +14,7 @@ function getRestaurantProfile() {
         })
 }
 
-getRestaurantProfile();
+getReview();
 
 function getRestaurantImage() {
     db.collection("image")

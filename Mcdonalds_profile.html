@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="styles/bootstrap.css">
   <link rel="stylesheet" href="KatUpdatedjavascript.js">
   <link rel="stylesheet" href="styles/restaurant_profile_JR.css" />
+  <link rel="stylesheet" href="styles/rating.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
 
 
   <title>CovidBites</title>
@@ -37,13 +39,80 @@
     </a>
   </nav>
 
-  <div id="firebaseui-auth-container"></div>
-  <div id="loader"></div>
+
 
   <!------Create a card for Restaurant's profile page using Javascript------------------------------------------->
 
   <div class="cards" id="card-container">
 
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title restuarnt-name d-block" id="restaurant"></h5>
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="star-rating">
+            <span class=""></span>
+          </div>
+          <ul class="rating">
+            <li class="rating-item active" data-rate="1">
+            <li class="rating-item" data-rate="2"></li>
+            <li class="rating-item" data-rate="3"></li>
+            <li class="rating-item" data-rate="4"></li>
+            <li class="rating-item" data-rate="5"></li>
+          </ul>
+          <!-- <input type="radio" name="rate" id="rate-1">
+                  <label for="rate-1" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-2">
+                  <label for="rate-2" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-3">
+                  <label for="rate-3" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-4">
+                  <label for="rate-4" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-5">
+                  <label for="rate-5" class="fas fa-star"></label> -->
+          <!-- <div class="stars-outer">
+                      <div class="stars-inner"></div>
+                  </div>
+                  <span class="number-rating"></span> -->
+
+
+
+          <div class="rating-widget">
+            <div class="post">
+              <div class="text">Thank you for sharing your experience!</div>
+            </div>
+
+            <div class="review-text">
+              <form action="#">
+                <div class="textarea">
+                  <textarea cols="60" placeholder="Share your experience" class="userReview"></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">CLOSE</button>
+          <button type="button" class="submit btn btn-primary" id="button" onclick="storeReview()">SUBMIT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviewBtn">
+    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
+      WRITE A REVIEW
+    </button>
   </div>
 
 
@@ -121,6 +190,7 @@
   <!-----------our JavaScript-------------------------------------------------------------------->
   <!-- <script src="/scripts/KatUpdatedjavascript.js"></script> -->
   <script src="/scripts/restaurant_profile_JR.js"></script>
+  <script src="/scripts/rating.js"></script>
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
