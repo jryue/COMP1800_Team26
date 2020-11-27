@@ -1,4 +1,4 @@
-body{
+body {
   background-color: #F2F0F9;
 }
 
@@ -14,33 +14,38 @@ body{
   top: 0%;
 }
 
-.btnclass{
+.btnclass {
   display: flex;
-  width:100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
 
-#sort{
-  display:flex;
+#sort {
+  display: flex;
   justify-content: center;
 }
-.cardsholder{
-  display:flex;
+
+.cardsholder {
+  display: flex;
   justify-content: center;
 }
+
 .btn {
   display: flex;
 }
-.col{
+
+.col {
   max-height: 33%;
 }
-.row{
+
+.row {
   max-width: 35%;
 }
-.card{
-  max-width:100%;
-  max-height:100%;
+
+.card {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .navbar a {
@@ -54,12 +59,12 @@ h4 {
 }
 
 .navbar-brand:hover {
-  color:#54DEC0;
+  color: #54DEC0;
 }
 
-.logolarge{
-  margin-top:10%;
-  display:flex;
+.logolarge {
+  margin-top: 10%;
+  display: flex;
   align-content: center;
   justify-content: center;
 
@@ -87,19 +92,22 @@ h4 {
 .search-icon {
   margin: auto;
   cursor: pointer;
-  color: #631E57;;
+  color: #631E57;
+  ;
 }
 
 .heart-icon {
   margin: auto;
   cursor: pointer;
-  color: #631E57;;
+  color: #631E57;
+  ;
 }
 
 .history-icon {
   margin: auto;
   cursor: pointer;
-  color: #631E57;;
+  color: #631E57;
+  ;
 }
 
 .hamburger-icon {
@@ -116,7 +124,8 @@ h4 {
 .line {
   width: 100%;
   height: 0.2rem;
-  background-color: #631E57;;
+  background-color: #631E57;
+  ;
   box-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
@@ -143,12 +152,12 @@ a {
   color: #631E57;
 }
 
-.container{
-  width:100%;
-  height:80%;
-  display:flex;
+.container {
+  width: 100%;
+  height: 80%;
+  display: flex;
   justify-content: center;
-  
+
 }
 
 #card-container {
@@ -161,7 +170,7 @@ a {
 
 .card {
   width: 25rem;
-  background-color:rgb(247, 242, 242);
+  background-color: rgb(247, 242, 242);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,9 +185,11 @@ a {
   max-height: 200px; */
 
 }
+
 .card-img-top {
   border-radius: 50%;
 }
+
 .name h1 {
   font-size: 2rem;
   padding-bottom: 0;
@@ -190,6 +201,7 @@ a {
   display: inline-block;
   margin: 1rem 0;
 }
+
 .ratings {
   display: flex;
   flex-direction: row;
@@ -197,15 +209,16 @@ a {
 }
 
 /*styling for the map */
-.centermap{
+.centermap {
   width: 100%;
-  display:flex;
+  display: flex;
   justify-content: center;
 }
+
 .map {
   height: 250px;
   width: 300px;
-  background-color:white;
+  background-color: white;
   padding: 0 0 0.5rem 0;
 }
 
@@ -223,11 +236,11 @@ a {
 }
 
 
-  /*largest screens------------------------------------------------------*/
-  @media screen and (min-width: 1280px) {
-    .cards {
-      width: 71%;
-      height: 72%;
-      top: 25%;
-    }
+/*largest screens------------------------------------------------------*/
+@media screen and (min-width: 1280px) {
+  .cards {
+    width: 71%;
+    height: 72%;
+    top: 25%;
   }
+}

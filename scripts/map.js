@@ -1,4 +1,3 @@
-
 //for the map
 var map = new ol.Map({
   target: 'map',

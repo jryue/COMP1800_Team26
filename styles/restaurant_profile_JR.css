@@ -5,8 +5,9 @@ body {
 .navbar {
     background-color: #EC800D;
 }
-a{
-    color:#631E57;
+
+a {
+    color: #631E57;
     text-decoration: none;
 }
 
@@ -34,6 +35,7 @@ a{
     justify-content: center;
     position: relative;
 }
+
 .card-title {
     font-size: 5rem;
 }
@@ -111,5 +113,5 @@ a{
 
 .heart {
     font-size: 4rem;
-    color:rgb(240, 9, 9);
+    color: rgb(240, 9, 9);
 }
