@@ -1,7 +1,12 @@
 function getRestaurantProfile() {
+
+    var queryString = decodeURIComponent(window.location.search);
+    var queries = queryString.split("?");
+    var restID = queries[1]; //grab the contents after "?"
+    console.log(restID);
+
     db.collection("Restaurants")
-        .where("Name", "==", "Mcdonalds")
-        .get()
+        .doc(restID)
         .then(function (snap) {
             snap.forEach(function (doc) {
                 console.log(doc.data());
@@ -12,15 +17,14 @@ function getRestaurantProfile() {
                 var masks = doc.data().Masks_required;
                 var id = doc.id; //need to make a faves array
                 var image = doc.data().Image;
+
                 //d1 is the div container with class = "card"
                 var d1 = $('#card-container').append('<div class="card" id="inside-card" style="width: 25rem;">');
                 var imgdiv = $('.card').append('<div id="img-container">');
                 var i = $('#img-container').append('<img class="card-img-top" src="/images/' + image + '" alt="Card image cap">');
-                //var heart = $('#img-container').append('<img class="heart-icon" src="/images/heart.png" alt="favorite">');
                 var d2 = d1.append('<div class="card-body">');
                 d2.append('<h5 class="card-title">' + name +
-                    '<i id="' + id + '" class="fa heart fa-heart-o"></i>' +
-                    '</h5>'); //add heart class from font-awesome
+                    '<i id="' + id + '" class="fa heart fa-heart-o"></i>' + '</h5>'); //add heart class from font-awesome
                 d2.append('<p class="card-text"> Address: ' + address + '</p>');
                 d2.append('<p class="card-text"> Hours of Operation: ' + hours + '</p>');
                 d2.append('<p class="card-text"> People currently inside the restaurant: ' + count + '</p>');
@@ -64,8 +68,10 @@ function getRestaurantProfile() {
                     }
                 })
 
-
             })
         })
+
 }
+
+
 getRestaurantProfile();

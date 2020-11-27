@@ -167,8 +167,8 @@ a {
 #card-container {
 
   display: flex;
-  /* grid-template-columns: repeat(3, 1fr); */
-  grid-column-gap: 2rem;
+  flex-direction: column;
+  width: 80%;
 
 }
 

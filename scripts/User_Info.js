@@ -12,7 +12,8 @@ db.collection("Restaurants").doc("Restaurant09").set({
   Business_hours: "Mon - Sat: 8AM - 10PM",
   Count: "23",
   Masks_required: "Yes",
-  Name: "In N Out"
+  Name: "In N Out" ,
+  Image: "innout.jpg"
 });
 
 //------------------------------------------------------

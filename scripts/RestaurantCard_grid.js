@@ -19,7 +19,8 @@ function createGrid(Restaurants) {
                     "<div class='col' id=" + cid + ">" +
                     "</div>"
 
-                if (!(i % 3)) {
+                //Make one card per row
+                if (i % 1) {
                     console.log("end the row")
                     console.log("create new row");
                     message = message +
@@ -56,10 +57,9 @@ function fillCards(Restaurants) {
                 var hours = doc.data().Business_hours;
                 var count = doc.data().Count;
                 var masks = doc.data().Masks_required;
-                var name_no_space = name.replace(/\s+/g, '');
-                //get name of image file from firebase
+                //var name_no_space = name.replace(/\s+/g, '');
                 var image = doc.data().Image;
-                name_no_space = name_no_space.concat('_profile.html');
+                //name_no_space = name_no_space.concat('_profile.html');
                 i = i + 1;
                 var card = "#c" + i;
                 console.log(card);
@@ -73,20 +73,7 @@ function fillCards(Restaurants) {
                     "<p class='card-text'> Masks Required: " + masks + "</p>" +
                     "<p class='card-text'> People currently inside: " + count + "</p>" +
                     "<p class='card-text'> " + hours + "</p>" +
-                    "<a href='restaurant_profile.html' class='btn btn-primary'>Go</a>" +
-                    //"<a href='" + name_no_space + "' class='btn btn-primary'>Go</a>" +
-                    /* "<div class='ratings'>" +
-                        '<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">' +
-                            '<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />' +
-                        '<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">' +
-                            '<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />' +
-                        '<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">' +
-                            '<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />' +
-                        '<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">' +
-                            '<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />' +
-                        '<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">' +
-                            '<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />' +
-                    "</div)" + */
+                    "<a href='restaurant_profile.html?'" + doc.id + " class='btn btn-primary'>Go</a>" +
                     "</div>" +
                     "</div)");
             })
