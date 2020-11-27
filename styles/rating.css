@@ -1,3 +1,7 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .modal-content {
     background-color: orange;
     color: white;
