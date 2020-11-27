@@ -19,7 +19,7 @@ function createGrid(Restaurants) {
                     "<div class='col' id=" + cid + ">" +
                     "</div>"
 
-                //Make one card per row
+                //Display one card per row
                 if (i % 1) {
                     console.log("end the row")
                     console.log("create new row");
@@ -41,9 +41,8 @@ function createGrid(Restaurants) {
 createGrid("Restaurants");
 
 //----------------------------------------------------------------------
-//  This function populates the slots identified by "c1", "c2" etc.
-//  with a bootrap card with information from the collection.
-//  Input param is name of the collection you want to display.
+//  This function populates each row with a bootstrap card
+//  that contains the information pulled from the database.
 //----------------------------------------------------------------------
 function fillCards(Restaurants) {
     db.collection(Restaurants)
@@ -57,9 +56,7 @@ function fillCards(Restaurants) {
                 var hours = doc.data().Business_hours;
                 var count = doc.data().Count;
                 var masks = doc.data().Masks_required;
-                //var name_no_space = name.replace(/\s+/g, '');
                 var image = doc.data().Image;
-                //name_no_space = name_no_space.concat('_profile.html');
                 i = i + 1;
                 var card = "#c" + i;
                 console.log(card);
@@ -73,7 +70,7 @@ function fillCards(Restaurants) {
                     "<p class='card-text'> Masks Required: " + masks + "</p>" +
                     "<p class='card-text'> People currently inside: " + count + "</p>" +
                     "<p class='card-text'> " + hours + "</p>" +
-                    //Add the restaurant's doc ID to the end of the restaurant profile page
+                    //Add the restaurant's doc ID to the end of the restaurant profile page so that we can parse it later
                     "<a href='restaurant_profile.html?" + doc.id + "' class='btn btn-primary'>Go</a>" +
                     "</div>" +
                     "</div)");

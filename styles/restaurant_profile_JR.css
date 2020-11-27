@@ -40,6 +40,8 @@ a {
 
 .card-title {
     font-size: 5rem;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .main-container {
@@ -52,6 +54,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 3rem 0 6rem 0;
 }
 
 #img-container {
@@ -68,7 +71,6 @@ a {
     margin-bottom: 0px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-
 }
 
 .home-icon {

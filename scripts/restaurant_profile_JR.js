@@ -3,11 +3,12 @@ function getRestaurantProfile() {
     //Parse the URL to get the restaurant doc ID by searching for the "?" and splitting it
     var queryString = decodeURIComponent(window.location.search);
     var queries = queryString.split("?");
-    var restID = queries[1]; //grab the contents after "?"
+    var restID = queries[1]; //grab the restaurant doc's ID after "?" and make it a variable
     console.log(restID);
 
     //Use the 'restID' to get the specific restaurant doc
     db.collection("Restaurants")
+        //once we have the restaurant's document, we need to 'get' it and then read it using 'then'
         .doc(restID)
         .get()
         .then(function (doc) {
@@ -31,18 +32,7 @@ function getRestaurantProfile() {
             d2.append('<p class="card-text"> Hours of Operation: ' + hours + '</p>');
             d2.append('<p class="card-text"> People currently inside the restaurant: ' + count + '</p>');
             d2.append('<p class="card-text"> Masks required: ' + masks + '</p>');
-
-            /* var ratings = d1.append("<div class='ratings'>");
-            var star1 = ratings.add('<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">');
-            var path1 = ratings.append('<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />');
-            var star2 = ratings.append('<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">');
-            var path2 = ratings.append('<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />');
-            var star3 = ratings.append('<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">');
-            var path3 = ratings.append('<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />');
-            var star4 = ratings.append('<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">');
-            var path4 = ratings.append('<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />');
-            var star5 = ratings.append('<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">');
-            var path5 = ratings.append('<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />'); */
+            d2.append('<a class="btn btn-warning" href="review.html" role="button">Click to read some reviews!</a>')
 
             // When the heart is clicked
             $("#" + id).click(function () { //add listener
