@@ -1,4 +1,4 @@
-const btn = document.querySelector("#button");
+const btn = document.querySelector("#submit");
 const post = document.querySelector(".post");
 const text = document.querySelector(".review-text")
 const widget = document.querySelector(".star-rating");

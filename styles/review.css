@@ -20,6 +20,10 @@ content {
     margin-bottom: .5rem;
 }
 
+.card {
+    background-color: rgb(247, 231, 224);
+}
+
 .subtitle {
     font-size: 1.1rem;
     color: gray;
