@@ -18,7 +18,7 @@ function getRestaurantProfile() {
             var hours = doc.data().Business_hours;
             var count = doc.data().Count;
             var masks = doc.data().Masks_required;
-            var id = doc.id; //need to make a faves array
+            var id = doc.id; //The restaurant's doc ID
             var image = doc.data().Image;
 
             //d1 is the div container with class = "card"
@@ -45,7 +45,7 @@ function getRestaurantProfile() {
                     console.log("ON");
                     //save to database
                     firebase.auth().onAuthStateChanged(function (user) {
-                        db.collection("users").doc(user.uid).update({
+                        db.collection("user").doc(user.uid).update({
                             faves: firebase.firestore.FieldValue.arrayUnion(id)
                         })
                     })
@@ -53,7 +53,7 @@ function getRestaurantProfile() {
                     console.log("OFF");
                     //Remove from database
                     firebase.auth().onAuthStateChanged(function (user) {
-                        db.collection("users").doc(user.uid).update({
+                        db.collection("user").doc(user.uid).update({
                             faves: firebase.firestore.FieldValue.arrayRemove(id)
                         })
                     })

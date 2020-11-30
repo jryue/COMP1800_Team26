@@ -1,12 +1,16 @@
-//set variables
-var rest_name = $(".card-title");
-var fav_icon = $(".heart-icon");
+function getFavoriteList() {
+    db.collection("user")
+    .doc(user.uid)
+    .get()
+    .then(function(doc) {
+        console.log(doc.data());
+        var fave = doc.data().faves;
 
-$(document).ready(function () {
-    fav_icon.on("click", function () {
+        var d1 = $("#fav-list").append(
+            "<h3> Your favorite restuarants are: </h3>" +
+            "<ul>" +
+            "<li>" + fave + "</li>" +
+            "</ul>");
 
-        $("#fav-list").append("<div>" +
-            "<p class='fav-list-p'>" + rest_name + "</p>" +
-            "</div>");
     })
-})
+}
