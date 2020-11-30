@@ -20,7 +20,8 @@ function storeReview() {
     text.style.display = "none";
     widget.style.display = "none";
     post.style.display = "block";
-    footer.style.display = "none";
+    container.style.display = "none";
+    btn.style.display = "none";
 
     db.collection("review").doc().set({
             userReview: review,
