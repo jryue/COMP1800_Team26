@@ -21,8 +21,12 @@
 
   <!-- My CSS -->
   <link rel="stylesheet" href="./styles/login.css">
-  <link rel="stylesheet" href="./styles/Navbar_and_map.css">
-  <link rel="stylesheet" href="./styles/bootstrap.css">
+  
+  <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="styles/test.css">
+    <link rel="stylesheet" href="styles/review.css">
+    <link rel="stylesheet" href="styles/rating.css">
   
   <!----Fonts used---------------------------------->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,11 +35,13 @@
 </head>
 
 <body>
-  <nav class="navbar navbar">
-    <a class="navbar-brand" href="home_page.html">
-      <img src="./images/dark.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-      CovidBites
-    </a>
+  <!--NAVBAR Image and text 
+    image and text are both clickable-->
+    <nav class="navbar navbar-expand-lg nav-top fixed-top">
+      <a class="navbar-brand" href="home_page.html">
+          <img src="./images/dark.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+          CovidBites
+      </a>
   </nav>
 
   <div id="firebaseui-auth-container" class="mt-5"></div>
@@ -43,8 +49,7 @@
 
   <!--------Footer with icons ------------------------------------------------------------------------------->
 
-  <footer class="footer">
-  </footer>
+ 
   <!---our JavaScript-->
   <script src="scripts/KatUpdatedjavascript.js"></script>
   <script src="scripts/firebase_api.js"></script>
@@ -56,6 +61,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
   </script>
+
+<footer class="navbar navbar-expand-lg fixed-bottom justify-content-around">
+  
+</footer>
 </body>
 
 </html>
