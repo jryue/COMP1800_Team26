@@ -25,7 +25,7 @@ function storeReview() {
 
     db.collection("review").doc().set({
             userReview: review,
-            reviewDate: today
+            reviewDate: today,
         })
         .then(function () {
             console.log("Document successfully written!");

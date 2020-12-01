@@ -115,7 +115,7 @@ function getReview(doc) {
     reviewList.appendChild(review);
 }
 
-db.collection("review").get().then(function (snapshot) {
+db.collection("review").orderBy('reviewDate', 'desc').get().then(function (snapshot) {
     snapshot.forEach(function (doc) {
         getReview(doc);
     })
