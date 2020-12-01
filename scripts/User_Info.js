@@ -32,10 +32,12 @@ function getUser() {
         .then(function (doc) {
           var n = doc.data().name;
           var e = doc.data().email;
+          var fave = doc.data().faves;
           //console.log(n);
           $("#user").text(n);
           $("#username").text(n);
           $("#email").text(e);
+          $("#fav-list").text(fave);
 
 
         })
@@ -45,6 +47,7 @@ function getUser() {
   })
 }
 getUser();
+
 
 //---------------------------------------------------------------
 // This function will check if the user is signed in.
