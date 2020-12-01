@@ -46,7 +46,7 @@ function getRestaurantProfile() {
                     //save to database
                     firebase.auth().onAuthStateChanged(function (user) {
                         db.collection("user").doc(user.uid).update({
-                            faves: firebase.firestore.FieldValue.arrayUnion(id)
+                            faves: firebase.firestore.FieldValue.arrayUnion(name)
                         })
                     })
                 } else {
@@ -54,7 +54,7 @@ function getRestaurantProfile() {
                     //Remove from database
                     firebase.auth().onAuthStateChanged(function (user) {
                         db.collection("user").doc(user.uid).update({
-                            faves: firebase.firestore.FieldValue.arrayRemove(id)
+                            faves: firebase.firestore.FieldValue.arrayRemove(name)
                         })
                     })
                 }
