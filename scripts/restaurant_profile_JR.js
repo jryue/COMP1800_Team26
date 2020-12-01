@@ -1,5 +1,5 @@
 function getRestaurantProfile() {
-
+    console.log("rest-profile")
     //Parse the URL to get the restaurant doc ID by searching for the "?" and splitting it
     var queryString = decodeURIComponent(window.location.search);
     var queries = queryString.split("?");
@@ -26,9 +26,9 @@ function getRestaurantProfile() {
             var imgdiv = $('.card').append('<div id="img-container">');
             var i = $('#img-container').append('<img class="card-img-top" src="/images/' + image + '" alt="Card image cap">');
             var d2 = d1.append('<div class="card-body">');
-            d2.append('<h5 class="card-title">' + name +
-                '<i id="' + id + '" class="fa heart fa-heart-o"></i>' + '</h5>'); //add heart class from font-awesome
-            d2.append('<p class="card-text"> Address: ' + address + '</p>');
+            d2.append('<h5 id="restName" class="card-title">' + name + '</h5>'); //add heart class from font-awesome
+            d2.append('<i' + id + '" class="fa heart fa-heart-o"></i>');
+            d2.append('<p id="class="card-text"> Address: ' + address + '</p>');
             d2.append('<p class="card-text"> Hours of Operation: ' + hours + '</p>');
             d2.append('<p class="card-text"> People currently inside the restaurant: ' + count + '</p>');
             d2.append('<p class="card-text"> Masks required: ' + masks + '</p>');
