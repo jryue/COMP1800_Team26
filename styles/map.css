@@ -1,0 +1,12 @@
+.centermap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.map {
+    height: 250px;
+    width: 300px;
+    background-color: white;
+    padding: 0 0 0.5rem 0;
+}

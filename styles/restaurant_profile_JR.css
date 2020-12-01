@@ -1,37 +1,3 @@
-* {
-    font-family: 'Open Sans', sans-serif;
-}
-
-body {
-    background-color: #F2F0F9;
-}
-
-.navbar {
-    background-color: #EC800D;
-}
-
-a {
-    color: #631E57;
-    text-decoration: none;
-}
-
-.navbar a {
-    color: #631E57;
-    font-weight: bold;
-}
-
-.navbar-brand:hover {
-    color: #54DEC0;
-}
-
-.navbar img {
-    position: absolute;
-    right: 5%;
-    height: 2.5em;
-    width: 2em;
-    top: 0%;
-}
-
 .card {
     display: flex;
     flex-direction: column;
@@ -59,64 +25,6 @@ a {
 
 #img-container {
     margin: 0 auto;
-}
-
-.footer {
-    position: fixed;
-    height: 50px;
-    background-color: #EC800D;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-}
-
-.home-icon {
-    margin: auto;
-    cursor: pointer;
-    color: #631E57;
-}
-
-.search-icon {
-    margin: auto;
-    cursor: pointer;
-    color: #631E57;
-    ;
-}
-
-.heart-icon {
-    margin: auto;
-    cursor: pointer;
-    color: #631E57;
-    ;
-}
-
-.history-icon {
-    margin: auto;
-    cursor: pointer;
-    color: #631E57;
-    ;
-}
-
-.hamburger-icon {
-    margin: auto;
-    width: 2.5rem;
-    height: 3rem;
-    z-index: 200;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    cursor: pointer;
-}
-
-.line {
-    width: 100%;
-    height: 0.2rem;
-    background-color: #631E57;
-    ;
-    box-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
 }
 
 .heart {

@@ -1,0 +1,60 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #F2F0F9;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/bg2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.navbar {
+    background-color: #F36D00;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-top {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.fas {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.fa-heart {
+    font-weight: 100;
+}
+
+.navbar img {
+    height: 2em;
+    width: 2em;
+    transform: translate(0, -10%);
+}
+
+.navbar a {
+    color: white;
+}
+
+h4 {
+    text-align: center;
+    padding: 1em;
+}
+
+.navbar-brand:hover {
+    color: #54DEC0;
+}
