@@ -1,4 +1,5 @@
 function getFavoriteList() {
+    console.log("word")
     db.collection("user")
     .doc(user.uid)
     .get()
@@ -14,3 +15,4 @@ function getFavoriteList() {
 
     })
 }
+
