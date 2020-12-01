@@ -6,17 +6,26 @@ const footer = document.querySelector(".modal-footer");
 const container = document.querySelector('.rating');
 const items = container.querySelectorAll('.rating-item');
 
-function storeReview() {
-    var review = document.querySelector(".userReview").value;
+function addReviewListener() {
+    btn.onclick = e => {
+        storeReview();
+    }
+}
 
+addReviewListener();
+
+function storeReview() {
+    var review = document.querySelector(".userReview").innerText;
+    console.log("storereview");
     //set review date as today's date
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0');
     var yyyy = today.getFullYear();
+    var r = document.getElementById("restName").innerText;
     today = mm + '/' + dd + '/' + yyyy;
 
-    //hide buttons if submit
+    // hide buttons if submit
     text.style.display = "none";
     widget.style.display = "none";
     post.style.display = "block";
@@ -26,6 +35,8 @@ function storeReview() {
     db.collection("review").doc().set({
             userReview: review,
             reviewDate: today,
+            restaurantName: r,
+            restaurantAddress: a
         })
         .then(function () {
             console.log("Document successfully written!");
@@ -34,16 +45,18 @@ function storeReview() {
             console.error("Error writing document: ", error);
         });
 }
-container.onclick = e => {
-    const elClass = e.target.classList;
-    if (!elClass.contains('active')) {
-        items.forEach(
-            item => item.classList.remove('active')
-        );
-        console.log(e.target.getAttribute("data-rate"));
-        elClass.add('active');
-    }
-}
+
+// container.onclick = e => {
+//     const elClass = e.target.classList;
+//     if (!elClass.contains('active')) {
+//         items.forEach(
+//             item => item.classList.remove('active')
+//         );
+//         console.log(e.target.getAttribute("data-rate"));
+//         elClass.add('active');
+//     }
+// }
+
 // // Initial Ratings
 // const ratings = {
 //     userRate: 4.5

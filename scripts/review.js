@@ -102,6 +102,7 @@ function getReview(doc) {
 
     date.innerText = doc.data().reviewDate;
     li.innerText = doc.data().userReview;
+    restName.innerText = doc.data().restaurantName;
 
     review.appendChild(restImg);
     review.appendChild(body);
