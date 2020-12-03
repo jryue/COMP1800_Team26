@@ -2,32 +2,29 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
     <title>CovidBites</title>
-    <meta name="comp1800 boilerplate code" content="my bcit project">
-    <meta name="author" content="BCIT">
-
-    <!-- Bootstrap for Mobile-first, and JQuery -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- Optional styles and scripts of your own -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- Our stylesheet -->
     <link rel="stylesheet" href="styles/review.css">
     <link rel="stylesheet" href="styles/rating.css">
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/navbar.css">
-
     <link rel="stylesheet" href="styles/restaurant_profile_JR.css" />
 
-    <!----Fonts used---------------------------------->
+    <!-- Fonts used -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-
     <!--NAVBAR Image and text 
     image and text are both clickable-->
     <nav class="navbar navbar-expand-lg nav-top fixed-top">
@@ -36,51 +33,44 @@
             CovidBites
         </a>
     </nav>
-
-    <div id="firebaseui-auth-container"></div>
-    <div id="loader"></div>
-
+    <!-----The container that holds all the restaurant cards. -->
     <div class="main-container">
-
-        <!-----The container that holds all the restaurant cards. -->
         <div class="cardsholder" id="card-container">
-
         </div>
+    </div>
 
-        <!-------Our footer containing the shortcut icons.---------->
-        <footer class="navbar navbar-expand-lg fixed-bottom justify-content-around">
-            <a href="home_page.html"> <i class="fas fa-home home-icon"></i></a>
-            <a href="favourite.html"><i class="fas fa-heart"></i></a>
-            <a href="home_page.html"> <i class="fas fa-search search-icon"></i></a>
-            <a href="user_profile.html"> <i class="fas fa-bars"></i> </a>
-        </footer>
+    <!-- Footer with icons -->
+    <footer class="navbar navbar-expand-lg fixed-bottom justify-content-around">
+        <a href="favourite.html"><i class="fas fa-heart"></i></a>
+        <a href="home_page.html"> <i class="fas fa-search search-icon"></i></a>
+        <a href="user_profile.html"> <i class="fas fa-bars"></i> </a>
+    </footer>
+    <!----------------------------------------------->
+    <!----- JS: Boostrap, Firebase, API related ----->
+    <!----------------------------------------------->
 
-        <!----------------------------------------------->
-        <!-- JS: Boostrap, Firebase, API related    -->
-        <!----------------------------------------------->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
 
-        <!-- Firebase libraries from CDN -->
-        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
-        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <!-- Your own Firebase API key information -->
+    <script src="scripts/firebase_api.js"> </script>
 
-        <!-- Your own Firebase API key information -->
-        <script src="scripts/firebase_api.js"> </script>
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
 
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/bd58bb013c.js"></script>
-        <!------------Our JavaScript-------------------------------------->
-        <script src="/scripts/RestaurantCard_grid.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bd58bb013c.js"></script>
+
+    <!---our JavaScript-->
+    <script src="/scripts/RestaurantCard_grid.js"></script>
 
 
 </body>

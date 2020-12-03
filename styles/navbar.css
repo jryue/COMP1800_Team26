@@ -62,3 +62,8 @@ h4 {
 .loginbtn {
     text-align: center;
 }
+
+#back {
+    position: absolute;
+    left: 5%;
+}

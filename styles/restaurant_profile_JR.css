@@ -48,3 +48,8 @@ span {
     border: none;
     background: none;
 }
+
+#back {
+    justify-self: left;
+    text-align: left;
+}
