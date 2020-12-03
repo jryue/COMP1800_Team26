@@ -26,22 +26,26 @@ function getRestaurantProfile() {
             var imgdiv = $('.card').append('<div id="img-container">');
             var i = $('#img-container').append('<img class="card-img-top" src="/images/' + image + '" alt="Card image cap">');
             var d2 = d1.append('<div class="card-body">');
+            $('.card').attr('id', "restPic");
             d2.append('<h5 id="restName" class="card-title">' + name + '</h5>'); //add heart class from font-awesome
-            d2.append('<i' + id + '" class="fa heart fa-heart-o"></i>');
-            d2.append('<p id="class="card-text"> Address: ' + address + '</p>');
-            d2.append('<p class="card-text"> Hours of Operation: ' + hours + '</p>');
-            d2.append('<p class="card-text"> People currently inside the restaurant: ' + count + '</p>');
-            d2.append('<p class="card-text"> Masks required: ' + masks + '</p>');
-            d2.append('<a class="btn btn-warning" href="review.html" role="button">Click to read some reviews!</a>')
+            d2.append('<i class="far fa-heart fav"></i>')
+            $('.fa-heart').attr('id', id);
+            d2.append('<p id="restAddress" class="card-text"> <span> Address:</span>' + address + '</p>');
+            d2.append('<p class="card-text"> <span> Hours of Operation: </span>' + hours + '</p>');
+            d2.append('<p class="card-text"> <span> People currently inside the restaurant: </span>' + count + '</p>');
+            d2.append('<p class="card-text"> <span> Masks required: </span>' + masks + '</p>');
+            d2.append($(".reviewBtn"));
+            d2.append('<a class="btn btn-warning mt-2" href="review.html" role="button">Click to read some reviews!</a>')
+            $(".modal-title").append(name);
 
             // When the heart is clicked
             $("#" + id).click(function () { //add listener
 
                 //Toggle between the full-heart ("fa-heart"), and the empty-heart (fa-heart-o)
-                $(this).toggleClass("fa-heart fa-heart-o");
+                $(this).toggleClass('far fas');
 
                 //If the "fa-heart" class is here, then add to faves, else remove from faves
-                if ($("#" + id).hasClass('fa-heart')) {
+                if ($(this).hasClass('fas')) {
                     console.log("ON");
                     //save to database
                     firebase.auth().onAuthStateChanged(function (user) {

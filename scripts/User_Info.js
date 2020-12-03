@@ -12,7 +12,7 @@ db.collection("Restaurants").doc("Restaurant09").set({
   Business_hours: "Mon - Sat: 8AM - 10PM",
   Count: "23",
   Masks_required: "Yes",
-  Name: "In N Out" ,
+  Name: "In N Out",
   Image: "innout.jpg"
 });
 
@@ -60,9 +60,22 @@ function disableLoginLink() {
   firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
       //console.log("change it to logout");
-      document.getElementById("loginbtn").href = "login.html";
+      document.getElementById("loginbtn").href = "login_page.html";
       document.getElementById("loginbtn").innerHTML = "Logout";
     }
   })
 }
 disableLoginLink();
+
+
+// 
+firebase.auth().onAuthStateChanged((user) => {
+  if (user) {
+    // add current signed-in user id to local storage
+    localStorage.setItem("signedInUserID", user.uid);
+    console.log(localStorage.getItem("signedInUserID"));
+
+  } else {
+
+  }
+});

@@ -1,27 +1,4 @@
-* {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.navbar a {
-  text-decoration: none;
-
-}
-
-.navbar img {
-  position: absolute;
-  right: 5%;
-  height: 2.8em;
-  width: 3em;
-  top: 0%;
-}
-
-
-footer {
-  position: fixed;
-  height: 50px;
-  background-color: teal;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  background-color: teal;
+.content {
+  display: flex;
+  justify-content: center;
 }

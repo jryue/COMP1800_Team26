@@ -2,12 +2,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .card-title {
-    font-size: 5rem;
+    font-size: 4rem;
     padding: 0;
     margin: 0 auto;
+    font-weight: bold;
+
 }
 
 .main-container {
@@ -27,7 +30,21 @@
     margin: 0 auto;
 }
 
-.heart {
-    font-size: 4rem;
+
+.fav {
+    font-size: 1.5rem;
     color: rgb(240, 9, 9);
+}
+
+#restName {
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+}
+
+#restPic {
+    border: none;
+    background: none;
 }

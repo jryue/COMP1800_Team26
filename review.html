@@ -12,7 +12,6 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="styles/bootstrap.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/review.css">
     <link rel="stylesheet" href="styles/rating.css">
@@ -76,8 +75,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-dark" data-dismiss="modal">CLOSE</button>
-                        <button type="button" class="submit btn btn-primary" id="submit"
-                            onclick="storeReview()">SUBMIT</button>
+                        <button type="button" class="submit btn btn-primary" id="submit">SUBMIT</button>
                     </div>
                 </div>
             </div>
@@ -85,17 +83,11 @@
 
         <!-- Review section -->
         <div class="rev-section">
-            <h2 class="title mt-5">Recent Activities</h2>
-            <p class="subtitle"> Share your experience and stay safe!</p>
-            <!-- Button trigger modal -->
-            <div class="reviewBtn">
-                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
-                    WRITE A REVIEW
-                </button>
+            <div class="container">
+                <h2 class="title mt-5">Recent activities</h2>
+                <p class="subtitle"> Share your experience and stay safe!</p>
             </div>
-
             <div class="user-reviews">
-
             </div>
         </div>
     </div>
@@ -104,9 +96,8 @@
 
     <footer class="navbar navbar-expand-lg fixed-bottom justify-content-around">
         <a href="home_page.html"> <i class="fas fa-home home-icon"></i></a>
-        <a href="#"><i class="fas fa-heart"></i></a>
+        <a href="favourite.html"><i class="fas fa-heart"></i></a>
         <a href="home_page.html"> <i class="fas fa-search search-icon"></i></a>
-        <a href="#"><i class="fas fa-history"></i></a>
         <a href="user_profile.html"> <i class="fas fa-bars"></i> </a>
     </footer>
 
@@ -127,6 +118,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bd58bb013c.js"></script>
     <!---our JavaScript-->
     <script src="scripts/rating.js"></script>
     <script src="scripts/review.js"></script>

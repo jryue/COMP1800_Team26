@@ -58,3 +58,7 @@ h4 {
 .navbar-brand:hover {
     color: #54DEC0;
 }
+
+.loginbtn {
+    text-align: center;
+}

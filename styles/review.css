@@ -16,11 +16,12 @@ content {
 .title {
     font-size: 2.5rem;
     text-transform: uppercase;
-    color: darkslategray;
+    color: teal;
     margin-bottom: .5rem;
+
 }
 
-.card {
+#review-body {
     background-color: rgb(247, 231, 224);
 }
 
@@ -68,13 +69,12 @@ img {
     font-style: italic;
 }
 
-.rating {
-    color: yellow;
-    margin: 1rem 0;
-}
-
 .desc-rivew {
     line-height: 1.5rem;
     letter-spacing: 1px;
     color: rgb(150, 150, 150);
+}
+
+.container {
+    background-color: rgba(216, 214, 226, 0.795);
 }

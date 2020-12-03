@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CovidBites</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- My CSS -->
+
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/favourite.css">
+
+    <!----Fonts used---------------------------------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--NAVBAR Image and text 
+    image and text are both clickable-->
+    <nav class="navbar navbar-expand-lg nav-top fixed-top">
+        <a class="navbar-brand" href="home_page.html">
+            <img src="./images/dark.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+            CovidBites
+        </a>
+    </nav>
+
+    <div class="content">
+        <h1>Your favourite Restuarants</h1>
+    </div>
+    <!--------Footer with icons ------------------------------------------------------------------------------->
+
+    <footer class="navbar navbar-expand-lg fixed-bottom justify-content-around">
+        <a href="home_page.html"> <i class="fas fa-home home-icon"></i></a>
+        <a href="favourite.html"><i class="fas fa-heart"></i></a>
+        <a href="home_page.html"> <i class="fas fa-search search-icon"></i></a>
+        <a href="user_profile.html"> <i class="fas fa-bars"></i> </a>
+    </footer>
+    <!-- Firebase libraries from CDN -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Your own Firebase API key information -->
+    <script src="scripts/firebase_api.js"> </script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bd58bb013c.js"></script>
+
+    <!---our JavaScript-->
+    <script src="scripts/favourite.js"></script>
+
+</body>
+
+</html>

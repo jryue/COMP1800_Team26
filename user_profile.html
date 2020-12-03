@@ -12,12 +12,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
     <!-- Optional styles and scripts of your own -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/review.css">
     <link rel="stylesheet" href="styles/rating.css">
-    <link rel="stylesheet" href="styles/JohnSearchbar.css" />
-    <link rel="stylesheet" href="styles/bootstrap.css">
 
 
     <!----Fonts used---------------------------------->
@@ -41,12 +38,11 @@
     <div id="firebaseui-auth-container"></div>
     <div id="loader"></div>
 
-    <div class="container">
+    <div class="container mt-5">
 
         <div class="profile" id="profile">
-
             <div class="user" id="">
-                <h2>Hello <span id="user"></span> thanks for using CovidBites!</h2>
+                <h2>Hello, <span id="user"></span> <br> Thanks for using CovidBites!</h2>
             </div>
             <p>We wouldnt be able to provide this service without our users.</p>
             <p>Welcome to your profile.</p>
@@ -54,9 +50,6 @@
             <div class="email">Email: <span id="email"></span></div>
         </div>
 
-        <div class="fav-section" id="fav-list">
-
-        </div>
 
         <!----------A Login button------------------------------------------>
         <div class="btnclass">
@@ -67,9 +60,8 @@
 
         <footer class="navbar navbar-expand-lg fixed-bottom justify-content-around">
             <a href="home_page.html"> <i class="fas fa-home home-icon"></i></a>
-            <a href="#"><i class="fas fa-heart"></i></a>
+            <a href="favourite.html"><i class="fas fa-heart"></i></a>
             <a href="home_page.html"> <i class="fas fa-search search-icon"></i></a>
-            <a href="#"><i class="fas fa-history"></i></a>
             <a href="user_profile.html"> <i class="fas fa-bars"></i> </a>
         </footer>
 
@@ -95,9 +87,10 @@
         <!-- Your own Firebase API key information -->
         <script src="scripts/firebase_api.js"> </script>
 
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/bd58bb013c.js"></script>
         <!------------Our JavaScript-------------------------------------->
         <script src="/scripts/User_Info.js"></script>
-        <script src="/scripts/favorite.js"></script>
 
 </body>
 

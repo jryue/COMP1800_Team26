@@ -7,17 +7,13 @@
     color: white;
 }
 
-.rating-widget {
+.review-widget {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.rating-widget .post {
-    display: none;
-}
-
-.rating-widget .star-rating input {
+.review-widget .post {
     display: none;
 }
 
@@ -54,43 +50,6 @@ form .textarea textarea {
     justify-content: center;
 }
 
-.rating {
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-.rating li {
-    list-style-type: none;
-}
-
-.rating-item {
-    cursor: pointer;
-    font-size: 2em;
-    color: yellow;
-    transition: all 0.2 ease;
-}
-
-.rating-item::before {
-    content: "\f005";
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-}
-
-.rating-item.active~.rating-item::before {
-    content: "\f005";
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 100;
-}
-
-.rating:hover .rating-item::before {
-    content: "\f005";
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-}
-
-.rating-item:hover~.rating-item::before {
-    content: "\f005";
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 100;
+.modal-title {
+    font-weight: bold;
 }
