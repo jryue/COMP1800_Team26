@@ -26,20 +26,19 @@ Content of the project folder:
 ```
  Top level of project folder: 
 ├── .firebaserc
-├── .gitignore               # Git ignore file
+├── .gitignore                  # Git ignore file
 ├── 404.html 404 page
-├── BoomBeer_profile.html rest page profile 
 ├── firebase.json 
 ├── firestore.indexes.json
 ├── firestore.rules
-├── home_page.html                # main search page of app 
-├── index.html               # landing HTML file, this is what users see when you come to url
-├── login_page.html user login
+├── home_page.html              # main search page of app 
+├── index.html                  # landing HTML file, this is what users see when you come to url
+├── login_page.html user login  # login page
 ├── README.md
-├── restaurant_cards.html shows all the restuarant cards
-├── restuarant_profile.html each restuarants individual profile
-├── review.html where users can leave reviews
-└──  user_profile.html             # profile HTML file, this is what users see when they click on settings/profile.
+├── restaurant_cards.html       # displays search results (restaurant cards)
+├── restuarant_profile.html     # takes you to the restaurant's profile page
+├── review.html                 # where users can leave reviews
+└──  user_profile.html          # the user's profile page - when they click on settings/profile.
 
 
 It has the following subfolders and files:
@@ -47,8 +46,8 @@ It has the following subfolders and files:
 ├── .vscode                  # settings
     /settings.json
 ├── .git                     # Folder for git repo
-├── images                   # Folder for images
-    /boombeer.jpg            #
+├── images                   # Folder for images (non-copyrighted images downloaded from pexels.com, pixabay.com)
+    /boombeer.jpg            # 
     /Daeji_4883_Burnaby_BC.png
     /dark.png                #
     /earls.jpg               #
@@ -63,15 +62,17 @@ It has the following subfolders and files:
     /sushi.jpg               #
     /yellow.png              #
 ├── scripts                  # Folder for scripts
-    /favorite.js             #
-    /firebase_api.js         #
-    /login.js                #
-    /map.js                  #
-    /rating.js               #
+    /favorite.js             # When user clicks on the heart image on the restaurant's profile, it adds the  
+                               restaurant's name to the user's favorites list
+    /firebase_api.js         # 
+    /login.js                # Set up user login
+    /map.js                  # 
+    /rating.js               # 
     /restaurant_profile_JR.js#
-    /RestaurantCard_grid.js  #
-    /review.js               #
-    /User_info.js            #
+    /RestaurantCard_grid.js  # Dynamically creates a grid of restaurant cards pulled from FireBase
+    /review.js               # Allows user to write a review of the restaurant and adds it to the 
+                               "review" collection in FireBase
+    /User_info.js            # 
 ├── styles                   # Folder for styles
     /bootstrap.css           #
     /JohnSearchbar.css       #
