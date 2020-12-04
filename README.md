@@ -37,10 +37,10 @@ Content of the project folder:
 ├── index.html                  # landing HTML file, this is what users see when you come to url
 ├── login_page.html user login  # login page
 ├── README.md
-├── restaurant_cards.html       # displays search results (restaurant cards)
-├── restuarant_profile.html     # takes you to the restaurant's profile page
+├── restaurant-cards.html       # displays search results (restaurant cards)
+├── restuarant-profile.html     # takes you to the restaurant's profile page
 ├── review.html                 # where users can leave reviews
-└──  user_profile.html          # the user's profile page - when they click on settings/profile.
+└──  user-profile.html          # the user's profile page - when they click on settings/profile.
 
 
 It has the following subfolders and files:
@@ -49,39 +49,34 @@ It has the following subfolders and files:
     /settings.json
 ├── .git                     # Folder for git repo
 ├── images                   # Folder for images (non-copyrighted images downloaded from pexels.com, pixabay.com)
-    /boombeer.jpg            # 
-    /Daeji_4883_Burnaby_BC.png
-    /dark.png                #
-    /earls.jpg               #
-    /heart.png               #
-    /innout.jpg              #
-    /light.png               #
-    /mcdonalds.jpg           # 
-    /orange.jpg              #
-    /pizza.jpg               #
-    /popeyes.jpg             #
-    /starbucks.jpg           #
-    /sushi.jpg               #
-    /yellow.png              #
+    /boombeer.jpg            # restaurant image for Boom Beer
+    /daeji.png               # restaurant image for Dae-ji
+    /dark.png                # Logo icon with dark color
+    /earls.jpg               # restaurant image for Earls
+    /innout.jpg              # restaurant image for In N Out
+    /mcdonalds.jpg           # restaurant image for McDonald's
+    /pizza.jpg               # restaurant image for Pizza Hut
+    /popeyes.jpg             # restaurant image for Pop Eye's
+    /starbucks.jpg           # restaurant image for Starbucks
+    /sushi.jpg               # restaurant image for Sushi California
 ├── scripts                  # Folder for scripts
-    /favorite.js             # When user clicks on the heart image on the restaurant's profile, it adds the  
+    /favorite.js             # When user clicks on the heart image on the       restaurant's profile, it adds the  
                                restaurant's name to the user's favorites list
-    /firebase_api.js         # 
+    /firebase-api.js         # Firebase API for firestore database
     /login.js                # Set up user login
-    /map.js                  # 
-    /rating.js               # 
-    /restaurant_profile_JR.js#
-    /RestaurantCard_grid.js  # Dynamically creates a grid of restaurant cards pulled from FireBase
+    /map.js                  # Javascript for map
+    /rating.js               # Javascript for review modal
+    /restaurant-profile.js   # Javascript for restaurant profile page
+    /restaurant-card-grid.js # Dynamically creates a grid of restaurant cards pulled from FireBase
     /review.js               # Allows user to write a review of the restaurant and adds it to the 
                                "review" collection in FireBase
-    /User_info.js            # 
+    /user_info.js            # Get signed-in user information
 ├── styles                   # Folder for styles
-    /bootstrap.css           #
-    /JohnSearchbar.css       #
-    /login.css               #
-    /Navbar_and_map.css      #
-    /rating.css              #
-    /restaurant_profile_JR.css 
+    /bootstrap.css           # Our own bootstrap stylsheet
+    /searchbar.css           # Stylesheet for search bar
+    /login.css               # Stylesheet for login page
+    /rating.css              # Stylesheet for modal
+    /restaurant-profile.css  # Stylesheet for restaurant-profile.html
     /review.css              # Stylesheet for review.html
 
 Firebase hosting files: 

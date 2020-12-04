@@ -10,7 +10,7 @@ var uiConfig = {
                         email: user.email
                     }).then(function () {
                         console.log("New user added to firestore");
-                        window.location.assign("home_page.html");
+                        window.location.assign("home-page.html");
                     })
                     .catch(function (error) {
                         console.log("Error adding new user: " + error);
@@ -26,12 +26,12 @@ var uiConfig = {
     },
 
     signInFlow: 'popup',
-    signInSuccessUrl: 'home_page.html',
+    signInSuccessUrl: 'home-page.html',
     signInOptions: [
         firebase.auth.EmailAuthProvider.PROVIDER_ID,
     ],
-    tosUrl: 'home_page.html',
-    privacyPolicyUrl: 'home_page.html',
+    tosUrl: 'home-page.html',
+    privacyPolicyUrl: 'home-page.html',
     accountChooserEnabled: false
 };
 ui.start('#firebaseui-auth-container', uiConfig);
