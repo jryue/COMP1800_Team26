@@ -1,13 +1,15 @@
-## My Web Application (Title)
+## CovidBites (Title)
 
 * [General info](#general-info)
+* [Authors](#authors)
 * [Technologies](#technologies)
 * [Contents](#content)
 
 ## General Info
-This web application was designed to help users find Covid-friendly restaurants. My name is John Ryue and the file I edited was the "index.html".
+This web application was designed to help users find Covid-friendly restaurants. 
 This browser based web application to help users find covid-friendy restaurants near their location. 
 
+## Authors
 * John Ryue
 * Sam Yoo	
 * Kat Sukkau
@@ -80,7 +82,7 @@ It has the following subfolders and files:
     /Navbar_and_map.css      #
     /rating.css              #
     /restaurant_profile_JR.css 
-    /review.css              #
+    /review.css              # Stylesheet for review.html
 
 Firebase hosting files: 
 ├── .firebaserc...
