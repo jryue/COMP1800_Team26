@@ -71,7 +71,7 @@ function fillCards(Restaurants) {
                     "<p class='card-text'> People currently inside: " + count + "</p>" +
                     "<p class='card-text'> " + hours + "</p>" +
                     //Add the restaurant's doc ID to the end of the restaurant profile page so that we can parse it later
-                    "<a href='restaurant_profile.html?" + doc.id + "' class='btn btn-warning'>Go</a>" +
+                    "<a href='restaurant-profile.html?" + doc.id + "' class='btn btn-warning'>Go</a>" +
                     "</div>" +
                     "</div)");
             })
